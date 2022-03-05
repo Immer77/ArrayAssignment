@@ -7,6 +7,9 @@ public class ArrayApp {
     public static void main(String[] args) {
         ArrayMethods metode = new ArrayMethods();
         int[] harUneven = {3,5,2,1,5};
+        int[] tabel1 = {2, 3, 5};
+        int[] tabel2 = {2, 5, 3, 2};
+        int[] tabel3;
 
 
 //        System.out.println("Forventet: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]");
@@ -47,6 +50,8 @@ public class ArrayApp {
         // metode.printArray(tabel2);
         //
         // System.out.println(metode.findMax(tabel2));
+        tabel3 = metode.makeSum(tabel1,tabel2);
+        metode.printArray(tabel3);
         System.out.println(metode.hasUneven(harUneven));
 
 

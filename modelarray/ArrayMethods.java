@@ -93,6 +93,20 @@ public class ArrayMethods {
         return max;
     }
 
+    //Opgave 3
+    public int[] makeSum(int[] a, int[] b){
+        int[] c = new int[(int) Math.max(a.length, b.length)];
+        for (int i = 0; i < c.length; i++) {
+            if(a.length > i){
+                c[i] += a[i];
+            }
+            if(b.length > i){
+                c[i] += b[i];
+            }
+        }
+        return c;
+    }
+
 
     //Opgave 6:
     public boolean hasUneven(int[] t){
